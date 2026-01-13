@@ -19900,7 +19900,7 @@ body.white-version {
 .testimonial-track {
   display: flex;
   gap: 30px;
-  animation: scrollTestimonials 30s linear infinite;
+  animation: scrollTestimonials 22s linear infinite;
 }
 
 /* Pause animation on hover */
