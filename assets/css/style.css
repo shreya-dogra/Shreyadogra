@@ -20054,3 +20054,17 @@ body.white-version {
   color: #555;
   line-height: 1.4;
 }
+/* Centered Hero Refinement */
+.slider-style-3 .slider-info {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.slider-style-3 .title span {
+  color: #d32f2f;
+}
+
+.slider-style-3 .subtitle {
+  font-weight: 500;
+  color: #555;
+}
