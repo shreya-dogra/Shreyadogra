@@ -20072,7 +20072,7 @@ body.white-version {
 }
 /* 1. Vertical gap and centering the container */
 .header-area {
-    padding-top: 40px; /* This creates the gap at the very top */
+    padding-top: 100px; /* This creates the gap at the very top */
     width: 100%;
 }
 
