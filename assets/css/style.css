@@ -20072,7 +20072,7 @@ body.white-version {
 }
 /* 1. Vertical gap and centering the container */
 .header-area {
-    padding-top: 50px; /* This creates the gap at the very top */
+    padding-top: 40px; /* This creates the gap at the very top */
     width: 100%;
 }
 
@@ -20091,7 +20091,7 @@ body.white-version {
     padding: 12px 35px !important;
     margin: 0 auto !important;
     background-color: #0d1013;     /* Dark background */
-    border: 2px solid #f6f6f6;     /* Use your Pink color for the border */
+    border: 1px solid #f6f6f6;     /* Use your Pink color for the border */
     border-radius: 50px;           /* Pill shape */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
