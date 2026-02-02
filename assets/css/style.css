@@ -20070,43 +20070,42 @@ body.white-version {
   color: #f9004d;
   font-size: 15px;
 }
-/* Center the nav container within its column */
+/* 1. Force horizontal layout and center the nav */
 .mainmenu-nav {
     display: flex;
-    justify-content: center; /* This centers the box on the page */
+    justify-content: center;
 }
 
-/* The "Boxed" Menu Styling */
+/* 2. The Box styling - Fixed for horizontal and background color */
 .mainmenu-boxed {
-    display: flex;
+    display: flex;            /* Crucial: forces items to be horizontal */
+    flex-direction: row;      /* Ensures they don't stack */
     list-style: none;
-    padding: 12px 35px;
+    padding: 12px 30px;
     margin: 0;
-    border: 2px solid #ff014f; /* Your brand color */
-    border-radius: 50px;       /* Pill shape like Rabia's site */
-    background: transparent;    
-    box-shadow: 0 4px 15px rgba(255, 1, 79, 0.1); /* Subtle glow effect */
+    background-color: #ff014f; /* Solid background color */
+    border: 2px solid #ff014f; /* Matches background */
+    border-radius: 50px;       /* Pill shape */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Style for individual links */
+/* 3. Space out the list items */
 .mainmenu-boxed li {
-    margin: 0 20px;
+    margin: 0 15px;
+    display: inline-block;    /* Backup for horizontal layout */
 }
 
+/* 4. White text styling */
 .mainmenu-boxed li a {
-    color: #000; /* Assuming a dark background, change to #000 if light */
-    font-weight: 500;
+    color: #ffffff !important; /* Force white text */
+    text-decoration: none;
+    font-weight: 600;
     font-size: 14px;
     text-transform: uppercase;
-    text-decoration: none;
     transition: 0.3s;
 }
 
+/* 5. Hover effect */
 .mainmenu-boxed li a:hover {
-    color: #ff014f;
-}
-
-/* Align button to the right */
-.text-end {
-    text-align: right;
+    opacity: 0.8;
 }
