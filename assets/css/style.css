@@ -20094,7 +20094,7 @@ body.white-version {
 }
 
 .mainmenu-boxed li a {
-    color: #ffffff; /* Assuming a dark background, change to #000 if light */
+    color: #000; /* Assuming a dark background, change to #000 if light */
     font-weight: 500;
     font-size: 14px;
     text-transform: uppercase;
