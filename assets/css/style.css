@@ -20070,3 +20070,43 @@ body.white-version {
   color: #f9004d;
   font-size: 15px;
 }
+/* Center the nav container within its column */
+.mainmenu-nav {
+    display: flex;
+    justify-content: center; /* This centers the box on the page */
+}
+
+/* The "Boxed" Menu Styling */
+.mainmenu-boxed {
+    display: flex;
+    list-style: none;
+    padding: 12px 35px;
+    margin: 0;
+    border: 2px solid #ff014f; /* Your brand color */
+    border-radius: 50px;       /* Pill shape like Rabia's site */
+    background: transparent;    
+    box-shadow: 0 4px 15px rgba(255, 1, 79, 0.1); /* Subtle glow effect */
+}
+
+/* Style for individual links */
+.mainmenu-boxed li {
+    margin: 0 20px;
+}
+
+.mainmenu-boxed li a {
+    color: #ffffff; /* Assuming a dark background, change to #000 if light */
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.mainmenu-boxed li a:hover {
+    color: #ff014f;
+}
+
+/* Align button to the right */
+.text-end {
+    text-align: right;
+}
