@@ -19,26 +19,6 @@
     <link rel="stylesheet" href="assets/css/plugins/feature.css">
     <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        /* === FIXED HERO BUTTON SWAP (High Priority) === */
-        
-        /* 1. DEFAULT STATE: RED (The "Active" Look) */
-        body #home a.rn-btn {
-            background: var(--color-primary) !important;
-            color: #ffffff !important;
-            border: none !important;
-            box-shadow: 0 10px 15px -5px rgba(255, 1, 79, 0.4) !important;
-            transition: all 0.4s ease-in-out !important;
-        }
-
-        /* 2. HOVER STATE: GREY (The "Neumorphic" Look) */
-        body #home a.rn-btn:hover {
-            background: linear-gradient(145deg, #e2e8ec, #ffffff) !important;
-            color: var(--color-primary) !important;
-            box-shadow: 10px 10px 19px #d1d9e6, -10px -10px 19px #ffffff !important;
-            transform: translateY(-3px) !important;
-        }
-    </style>
 </head>
 
 <body class="template-color-1 spybody white-version" data-spy="scroll" data-target=".navbar-example2" data-offset="150">
@@ -2132,39 +2112,6 @@ any team!”</p>
     <!-- main JS -->
     <script src="assets/js/main.js"></script>
 </body>
-    <style>
-    /* === THE NUCLEAR FIX === */
-    
-    /* 1. Target the buttons specifically in the slider/home area */
-    .slider-area a.rn-btn {
-        background: #ff014f !important;   /* Force RED default */
-        color: #ffffff !important;        /* White text */
-        border: none !important;
-        opacity: 1 !important;
-        z-index: 10 !important;
-        /* Reset any hidden background images */
-        background-image: none !important; 
-    }
-
-    /* 2. FORCE GREY ON HOVER */
-    .slider-area a.rn-btn:hover {
-        background: #e2e8ec !important;   /* Force GREY background */
-        background-image: none !important; /* Ensure no red gradient sits on top */
-        color: #ff014f !important;        /* Red Text */
-        /* The 3D Shadow effect */
-        box-shadow: 10px 10px 19px #d1d9e6, -10px -10px 19px #ffffff !important;
-        transform: translateY(-3px) !important;
-    }
-
-    /* 3. DELETE THE HIDDEN RED LAYER (This is likely the culprit!) */
-    .slider-area a.rn-btn::before, 
-    .slider-area a.rn-btn::after {
-        display: none !important;
-        content: none !important;
-        background: none !important;
-        width: 0 !important;
-        height: 0 !important;
-    }
-    </style>
+   
 </html>
 <!-- redeploy clean -->
