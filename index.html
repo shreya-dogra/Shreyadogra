@@ -20,20 +20,25 @@
     <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        /* SWAP BUTTON COLOURS FOR HERO SECTION */
-        /* Default State: Red Background, White Text */
-        .slider-area .rn-btn {
+        /* === FIXED HERO BUTTON SWAP === */
+        
+        /* 1. DEFAULT STATE: RED (Solid/Gradient look) */
+        #home .rn-btn {
             background: var(--color-primary) !important;
             color: #ffffff !important;
-            box-shadow: none !important;
-            border: none !important; 
+            border: none !important;
+            /* This shadow makes it pop */
+            box-shadow: 0 10px 15px -5px rgba(255, 1, 79, 0.4) !important; 
+            opacity: 1 !important;
         }
-    
-        /* Hover State: Grey Gradient, Red Text (Neumorphic) */
-        .slider-area .rn-btn:hover {
-            background: var(--background-color-1) !important;
+
+        /* 2. HOVER STATE: GREY (Neumorphic 3D look) */
+        #home .rn-btn:hover {
+            background: linear-gradient(145deg, #e2e8ec, #ffffff) !important;
             color: var(--color-primary) !important;
-            box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff !important;
+            /* This is the specific 3D shadow for the grey theme */
+            box-shadow: 10px 10px 19px #d1d9e6, -10px -10px 19px #ffffff !important;
+            transform: translateY(-3px); /* smooth lift effect */
         }
     </style>
 </head>
