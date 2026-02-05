@@ -19,6 +19,23 @@
     <link rel="stylesheet" href="assets/css/plugins/feature.css">
     <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* SWAP BUTTON COLOURS FOR HERO SECTION */
+        /* Default State: Red Background, White Text */
+        .slider-area .rn-btn {
+            background: var(--color-primary) !important;
+            color: #ffffff !important;
+            box-shadow: none !important;
+            border: none !important; 
+        }
+    
+        /* Hover State: Grey Gradient, Red Text (Neumorphic) */
+        .slider-area .rn-btn:hover {
+            background: var(--background-color-1) !important;
+            color: var(--color-primary) !important;
+            box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff !important;
+        }
+    </style>
 </head>
 
 <body class="template-color-1 spybody white-version" data-spy="scroll" data-target=".navbar-example2" data-offset="150">
